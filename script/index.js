@@ -161,3 +161,12 @@ document.getElementById('clearBtn').addEventListener('click', function(){
     document.getElementById("sixButton").style.display ="none";
     document.getElementById("time-six").style.display ="none";
 })
+
+
+let colors = ['skyblue', 'pink', 'lightgreen', 'tomato', 'white',];
+let i = 0;
+
+function changeColor() {
+  document.getElementById('btnColor').style.backgroundColor = colors[i];
+  i = (i + 1) % colors.length;
+}
